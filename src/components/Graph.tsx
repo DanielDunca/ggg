@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import ForceGraph2D, { ForceGraphMethods } from 'react-force-graph-2d';
+import ForceGraph2D, { ForceGraphMethods } from 'react-force-graph';
 import { Node, Link } from '../types';
 
 interface Props {
