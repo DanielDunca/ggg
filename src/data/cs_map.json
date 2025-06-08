@@ -5,6 +5,7 @@
       "kind": "area",
       "activities": ["theory", "experiment", "design"],
       "dependencies": ["Programming Languages", "Software Engineering"],
+
       "influences": [
         "Artificial Intelligence & Robotics",
         "Graphics & Visualization"
@@ -20,6 +21,12 @@
           "status": "research",
           "hint": "Near-optimal space with O(1) operations"
         }
+
+      "influences": ["Artificial Intelligence & Robotics", "Graphics & Visualization"],
+      "problems": [
+        {"title": "P vs NP", "status": "open", "hint": "Are polynomial-time solutions as easy as verifications?"},
+        {"title": "Succinct data structures", "status": "research", "hint": "Near-optimal space with O(1) operations"}
+
       ],
       "people": ["Donald Knuth", "Robert Tarjan", "Eva Tardos"],
       "venues": ["STOC", "FOCS", "SODA"],
@@ -36,11 +43,15 @@
       "dependencies": ["Theory of Computation"],
       "influences": ["Software Engineering"],
       "problems": [
+
         {
           "title": "Type inference for dynamic languages",
           "status": "research",
           "hint": "Balance flexibility with safety"
         }
+
+        {"title": "Type inference for dynamic languages", "status": "research", "hint": "Balance flexibility with safety"}
+
       ],
       "people": ["Grace Hopper", "Bjarne Stroustrup"],
       "venues": ["POPL", "PLDI"],
@@ -55,11 +66,15 @@
       "dependencies": [],
       "influences": ["Operating Systems"],
       "problems": [
+
         {
           "title": "Energy-efficient processors",
           "status": "research",
           "hint": "More performance per watt"
         }
+
+        {"title": "Energy-efficient processors", "status": "research", "hint": "More performance per watt"}
+
       ],
       "people": ["John Hennessy", "David Patterson"],
       "venues": ["ISCA"],
@@ -72,11 +87,15 @@
       "dependencies": ["Architecture"],
       "influences": ["Networking"],
       "problems": [
+
         {
           "title": "Scalable scheduling",
           "status": "research",
           "hint": "Efficient resource allocation"
         }
+
+        {"title": "Scalable scheduling", "status": "research", "hint": "Efficient resource allocation"}
+
       ],
       "people": ["Ken Thompson", "Dennis Ritchie"],
       "venues": ["SOSP", "OSDI"],
@@ -89,11 +108,15 @@
       "dependencies": ["Operating Systems"],
       "influences": [],
       "problems": [
+
         {
           "title": "Reliable wireless",
           "status": "research",
           "hint": "High bandwidth with low power"
         }
+
+        {"title": "Reliable wireless", "status": "research", "hint": "High bandwidth with low power"}
+
       ],
       "people": ["Vint Cerf"],
       "venues": ["SIGCOMM"],
@@ -106,11 +129,15 @@
       "dependencies": ["Programming Languages"],
       "influences": [],
       "problems": [
+
         {
           "title": "Scalable transaction processing",
           "status": "research",
           "hint": "Consistency with high throughput"
         }
+
+        {"title": "Scalable transaction processing", "status": "research", "hint": "Consistency with high throughput"}
+
       ],
       "people": ["Michael Stonebraker"],
       "venues": ["SIGMOD"],
@@ -123,11 +150,15 @@
       "dependencies": ["Algorithms and Data Structures"],
       "influences": [],
       "problems": [
+
         {
           "title": "General intelligence",
           "status": "open",
           "hint": "Systems that learn and adapt broadly"
         }
+
+        {"title": "General intelligence", "status": "open", "hint": "Systems that learn and adapt broadly"}
+
       ],
       "people": ["Andrew Ng"],
       "venues": ["ICML", "AAAI"],
@@ -142,11 +173,15 @@
       "dependencies": ["Algorithms and Data Structures"],
       "influences": [],
       "problems": [
+
         {
           "title": "Fast linear solvers",
           "status": "research",
           "hint": "Handle massive sparse matrices"
         }
+
+        {"title": "Fast linear solvers", "status": "research", "hint": "Handle massive sparse matrices"}
+
       ],
       "people": ["Cleve Moler"],
       "venues": ["SC"],
@@ -159,11 +194,15 @@
       "dependencies": ["Programming Languages"],
       "influences": ["Human-Computer Interaction"],
       "problems": [
+
         {
           "title": "Correctness proofs",
           "status": "research",
           "hint": "Verifiable large systems"
         }
+
+        {"title": "Correctness proofs", "status": "research", "hint": "Verifiable large systems"}
+
       ],
       "people": ["Fred Brooks"],
       "venues": ["ICSE"],
@@ -176,11 +215,15 @@
       "dependencies": ["Software Engineering"],
       "influences": [],
       "problems": [
+
         {
           "title": "Natural user interfaces",
           "status": "research",
           "hint": "Interaction beyond keyboard and mouse"
         }
+
+        {"title": "Natural user interfaces", "status": "research", "hint": "Interaction beyond keyboard and mouse"}
+
       ],
       "people": ["Ben Shneiderman"],
       "venues": ["CHI"],
@@ -193,11 +236,15 @@
       "dependencies": ["Algorithms and Data Structures"],
       "influences": [],
       "problems": [
+
         {
           "title": "Real-time global illumination",
           "status": "research",
           "hint": "High quality lighting at interactive rates"
         }
+
+        {"title": "Real-time global illumination", "status": "research", "hint": "High quality lighting at interactive rates"}
+
       ],
       "people": ["Jim Blinn"],
       "venues": ["SIGGRAPH"],
@@ -210,11 +257,15 @@
       "dependencies": [],
       "influences": ["Programming Languages"],
       "problems": [
+
         {
           "title": "Quantum complexity classes",
           "status": "research",
           "hint": "What problems are efficiently solvable on quantum computers?"
         }
+
+        {"title": "Quantum complexity classes", "status": "research", "hint": "What problems are efficiently solvable on quantum computers?"}
+
       ],
       "people": ["Alan Turing"],
       "venues": ["LICS"],
@@ -222,6 +273,7 @@
     }
   ],
   "links": [
+
     {
       "source": "Algorithms and Data Structures",
       "target": "Programming Languages",
@@ -312,5 +364,24 @@
       "target": "Programming Languages",
       "relation": "influence"
     }
+
+    {"source": "Algorithms and Data Structures", "target": "Programming Languages", "relation": "dependency"},
+    {"source": "Algorithms and Data Structures", "target": "Software Engineering", "relation": "dependency"},
+    {"source": "Algorithms and Data Structures", "target": "Artificial Intelligence & Robotics", "relation": "influence"},
+    {"source": "Algorithms and Data Structures", "target": "Graphics & Visualization", "relation": "influence"},
+    {"source": "Programming Languages", "target": "Theory of Computation", "relation": "dependency"},
+    {"source": "Programming Languages", "target": "Software Engineering", "relation": "influence"},
+    {"source": "Architecture", "target": "Operating Systems", "relation": "influence"},
+    {"source": "Operating Systems", "target": "Architecture", "relation": "dependency"},
+    {"source": "Operating Systems", "target": "Networking", "relation": "influence"},
+    {"source": "Networking", "target": "Operating Systems", "relation": "dependency"},
+    {"source": "Databases", "target": "Programming Languages", "relation": "dependency"},
+    {"source": "Artificial Intelligence & Robotics", "target": "Algorithms and Data Structures", "relation": "dependency"},
+    {"source": "Numerical & Symbolic Computation", "target": "Algorithms and Data Structures", "relation": "dependency"},
+    {"source": "Software Engineering", "target": "Programming Languages", "relation": "dependency"},
+    {"source": "Software Engineering", "target": "Human-Computer Interaction", "relation": "influence"},
+    {"source": "Human-Computer Interaction", "target": "Software Engineering", "relation": "dependency"},
+    {"source": "Graphics & Visualization", "target": "Algorithms and Data Structures", "relation": "dependency"},
+    {"source": "Theory of Computation", "target": "Programming Languages", "relation": "influence"}
   ]
 }

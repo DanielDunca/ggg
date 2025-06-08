@@ -42,6 +42,7 @@ export default function DetailsPane({ node }: Props) {
               className="text-sm"
             >
               {active === 'overview' && (
+
                 <pre>
                   {JSON.stringify(
                     {
@@ -53,6 +54,13 @@ export default function DetailsPane({ node }: Props) {
                     2
                   )}
                 </pre>
+
+                <pre>{JSON.stringify({
+                    activities: node.activities,
+                    dependencies: node.dependencies,
+                    influences: node.influences,
+                  }, null, 2)}</pre>
+
               )}
               {active === 'problems' && (
                 <div>
