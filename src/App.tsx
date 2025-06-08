@@ -13,6 +13,19 @@ export default function App() {
   const links = useMemo(() => data.links as Link[], []);
 
   return (
+17s1d3-codex/build-interactive-computer-science-map
+    <div className="h-screen">
+      <SearchBar query={query} onChange={setQuery} />
+      <div className="flex h-full">
+        <Graph
+          nodes={nodes}
+          links={links}
+          highlight={query}
+          onNodeClick={setSelected}
+        />
+        <DetailsPane node={selected} />
+      </div>
+
     <div className="flex h-screen">
       <SearchBar query={query} onChange={setQuery} />
       <Graph
@@ -22,6 +35,7 @@ export default function App() {
         onNodeClick={setSelected}
       />
       <DetailsPane node={selected} />
+main
     </div>
   );
 }
